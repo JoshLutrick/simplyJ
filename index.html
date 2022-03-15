@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- 2nd Link is FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Page</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="navbar__links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="mailto:joshslutrick@gmail.com">Contact</a>
+            </div>
+        </nav>
+        <div class="navbar__menulinks">
+            <ul class="menulinks__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mailto:joshslutrick@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+        <div class="head__introduction">
+            <img class="head__introduction__img" src="Images/Profile Logo.png" alt="">
+            <h2 class="head__introduction__title">Joshua Lutrick</h2>
+            <p class="head__introduction__desc">Front End <span class="head__introduction__desc--active">Developer</span></p>
+        </div>
+        <div class="arrowbtn">
+            <a href="#about">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            
+        </div>
+    </header>
+    <section class="aboutsection" id="about">
+        <div class="aboutsection__container1">
+            <div class="aboutsection__container1__head">
+                <h2 class="aboutsection__container1__title">About Me</h2>
+                <p class="aboutsection__container1__desc">I am a passionate web developer that loves to learn new technologies</p>
+            </div>
+            <img src="Images/squareArt.png" alt="">
+        </div>
+    </section>
+    <section class="projectsection" id="projects">
+        <h2 class="projectsection__title">Projects</h2>
+            <div class="cardcontainer">
+        <div class="cardcontainer__card">
+            <img src="Images/royaltyJ background.png" alt="">
+            <div class="cardcontainer__card__body">
+                <h2>RoyaltyJ - Freelance</h2>
+                <p>I freelance and create websites for clients</p>
+                <a href="https://github.com/JoshLutrick/royaltyJ" target="_blank">View Github</a>
+            </div>
+        </div>
+        <div class="cardcontainer__card">
+            <img src="https://www.hdimages.pics/images/quotes/english/general/geometric-shapes-background-hd-52650-308209.jpg" alt="">
+            <div class="cardcontainer__card__body">
+                <h2>TITLE</h2>
+                <p>Enter Description</p>
+                <a href="#">View Github</a>
+            </div>
+        </div>
+        <div class="cardcontainer__card">
+            <img src="https://wallpapersqueen.com/wp-content/uploads/2021/07/HD-Abstract-Wallpaper.jpg" alt="">
+            <div class="cardcontainer__card__body">
+                <h2>TITLE</h2>
+                <p>Enter Description</p>
+                <a href="#">View Github</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="bottomfooter">
+        <h2 class="bottomfooter__title">Contact</h2>
+        <p class="bottomfooter__email">joshslutrick@gmail.com</p>
+    </footer>
+</body>
+</html>

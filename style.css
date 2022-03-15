@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.navbar {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: white;
+    top: 0;
+}
+.navbar__links {
+    display: none;
+}
+.navbar .fa-solid {
+    font-size: 4rem;
+    color: #4992FF;
+    cursor: pointer;
+    padding-right: 2rem;
+}
+.head__introduction {
+    margin: 13rem auto;
+}
+.head__introduction__img {
+    display: block;
+    margin: 0 auto;
+    width: 9rem;
+    border-radius: 50%;
+    border: 7px solid #4992FF;
+}
+.head__introduction__title {
+    font-size: 35px;
+    font-family: roboto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+}
+.head__introduction__desc {
+    font-size: 20px;
+    font-family: roboto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.head__introduction__desc--active {
+    color: #4992FF;
+    font-weight: bold;
+}
+.navbar__menulinks {
+    transform: translateY(-45rem);
+    background-color: #4992FF;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    top: 6rem;
+    transition: .5s;
+}
+.navbar__menulinks__show {
+    transform: translateY(0);
+}
+.menulinks__list {
+    text-align: center;
+    font-size: 3rem;
+}
+.menulinks__list a {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+.arrowbtn {
+    text-align: center;
+}
+.fa-arrow-down {
+    font-size: 4rem;
+    background-color: #4992FF;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+}
+.cardcontainer {
+    margin-top: 2rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+    gap: 4rem;
+}
+.cardcontainer__card {
+    width: 299px;
+    height: 422px;
+    box-shadow: 10px 10px 15px 0 rgb(0,0,0, 31%);
+    margin: 2rem auto;
+}
+.cardcontainer__card img {
+    width: 299px;
+    height: 180px;
+}
+.cardcontainer__card__body {
+    padding: 1rem;
+}
+.cardcontainer__card__body h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: roboto;
+}
+.cardcontainer__card__body p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: roboto;
+    height: 6rem;
+}
+.cardcontainer__card__body a {
+    font-size: 1.5rem;
+    padding: .4rem;
+    color: black;
+    text-decoration: none;
+    border: 6px solid #4992FF;
+    font-family: roboto;
+}
+.aboutsection {
+    margin-top: 23rem;
+}
+.aboutsection__container1 {
+    background-color: #4992FF;
+    clip-path: polygon(48.7% 12.5%, 100% 0%, 100% 100%, 48.9% 89.8%, 0% 100%, 0% 60%, 0% 0%);
+    padding: 1rem;
+    padding-top: 8rem;
+}
+.aboutsection__container1__title {
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+    width: 89%;
+    border-left: 10px solid white;
+    font-family: roboto;
+}
+.aboutsection__container1__desc {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    width: 95%;
+    color: white;
+    font-family: roboto;
+}
+.aboutsection__container1 img {
+    display: block;
+    margin: 7rem auto;
+}
+.projectsection {
+    margin: 5rem 0;
+}
+.projectsection__title {
+    font-size: 3rem;
+    font-family: roboto;
+    padding-right: 1rem;
+    text-align: end;
+    width: 89%;
+    border-right: 10px solid black;
+}
+.bottomfooter {
+    background-color: #4992FF;
+    padding: 1rem;
+}
+.bottomfooter__title {
+    font-size: 2.15rem;
+    font-family: roboto;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.bottomfooter__email {
+    font-family: roboto;
+    line-height: 2;
+    font-size: 1.4rem;
+    text-align: center;
+}
+@media (min-width: 700px){
+    .cardcontainer {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+    }
+    .navbar .fa-solid {
+        display: none;
+    }
+    .navbar__links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .navbar__links a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #4992FF;
+        font-family: roboto;
+        text-transform: uppercase;
+    }
+    .aboutsection__container1 {
+        display: flex;
+        justify-content: space-evenly;
+        height: 30rem;
+    }
+    .aboutsection__container1__head {
+        width: 50%;
+    }
+    .aboutsection__container1 img {
+        height: 20rem;
+        margin: 0;
+        display: inline;
+    }
+}
+@media (min-width: 1100px){
+    .head__introduction__img {
+        width: 12rem;
+    }
+    .head__introduction__title {
+        font-size: 45px;
+    }
+    .head__introduction__desc {
+        font-size: 26px;
+    }
+    .cardcontainer {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(3, 1fr)
+    }
+    .navbar__links a {
+        font-size: 1.5rem;
+    }
+
+}
