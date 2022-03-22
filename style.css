@@ -55,6 +55,7 @@ body {
     font-weight: bold;
 }
 .navbar__menulinks {
+    z-index: 9998;
     transform: translateY(-45rem);
     background-color: #4992FF;
     width: 100%;
